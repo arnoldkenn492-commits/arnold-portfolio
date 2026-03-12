@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arnold Kenn Fernandez — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <h1>Arnold Kenn Fernandez</h1>
+      <p class="course">BS_INFOTECH — Cotabato State University</p>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p id="datetime"></p>
+    <button onclick="showWelcome()">Show Welcome Message</button>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="arnold.jpg" alt="Arnold Kenn Fernandez" class="profile-pic"/>
+      <div class="bio">
+        <p>Hi! I'm <strong>Arnold Kenn Fernandez</strong>, a second-year BSIT student at Cotabato State University. I'm a passionate <strong>photographer and photo editor</strong> — I love capturing moments through the lens and bringing them to life through editing.</p>
+        <p>This creative eye carries into my web development work. I believe great software should feel as visually compelling as a well-composed shot — clean, intentional, and memorable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>A fully responsive personal portfolio built from scratch using HTML, CSS, and JavaScript. Features a live date and time display, an interactive contact form, and a clean layout that showcases skills and projects.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Login Form UI</h3>
+      <p>A clean login form interface with username and password fields, form validation using JavaScript, show/hide password toggle, and error feedback messages. Designed with a focus on user experience.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Photo Gallery Page</h3>
+      <p>A responsive photo gallery showcasing photography work. Built with HTML and CSS grid layout, featuring hover effects on images and a clean organized display of photos taken and edited by the developer.</p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question or want to work together? Fill out the form below!</p>
+
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your full name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="your@email.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Arnold Kenn Fernandez &mdash; BSIT &mdash; Cotabato State University</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

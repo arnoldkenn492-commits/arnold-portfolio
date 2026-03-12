@@ -1,0 +1,240 @@
+/* ==============================
+   ARNOLD KENN FERNANDEZ
+   Personal Portfolio — style.css
+   ============================== */
+
+/* --- PAGE LAYOUT --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #222;
+  background: #f5f5f5;
+}
+
+/* Center main content */
+header, section, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+/* --- HEADER --- */
+header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: white;
+  max-width: 100%;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.4em;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+header .course {
+  font-size: 1em;
+  color: #aac4ff;
+  margin-bottom: 20px;
+}
+
+/* --- NAV BAR --- */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95em;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background: #e94560;
+  color: white;
+}
+
+/* --- SECTIONS --- */
+section {
+  background: white;
+  margin: 0 auto 20px auto;
+  border-radius: 6px;
+  padding: 40px;
+}
+
+section h2 {
+  font-size: 1.7em;
+  margin-bottom: 16px;
+  color: #1a1a2e;
+  border-bottom: 2px solid #e94560;
+  padding-bottom: 8px;
+}
+
+section p {
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+/* --- HOME SECTION --- */
+#home {
+  text-align: center;
+  background: linear-gradient(135deg, #eef2ff, #fce4ec);
+  padding: 50px 40px;
+}
+
+#home p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#home button {
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 0.95em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#home button:hover {
+  background: #e94560;
+}
+
+/* --- ABOUT SECTION --- */
+.about-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 210px;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 6px;
+  border: 3px solid #e94560;
+  flex-shrink: 0;
+}
+
+.bio p {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* --- PROJECTS SECTION --- */
+#projects {
+  background: white;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #f0f4ff, #fce4ec);
+  border-left: 4px solid #e94560;
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.project-card h3 {
+  font-size: 1.1em;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- CONTACT SECTION --- */
+#contact {
+  background: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #1a1a2e;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95em;
+  font-family: Georgia, serif;
+  background: #fafafa;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #e94560;
+  outline: none;
+  background: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #e94560;
+}
+
+/* --- FOOTER --- */
+footer {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: #aac4ff;
+  text-align: center;
+  padding: 24px 40px;
+  font-size: 0.88em;
+  max-width: 100%;
+  margin-top: 0;
+  border-radius: 0;
+}
